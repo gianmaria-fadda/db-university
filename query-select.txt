@@ -53,12 +53,18 @@ IS NULL;
 9. Inserire nella tabella degli studenti un nuovo record con i propri dati (per il campo
 degree_id, inserire un valore casuale)
 
-
+INSERT INTO `students` (`id`, `name`, `surname`, `date_of_birth`, `fiscal_code`, `enrolment_date`, `registration_number`, `email`)
+VALUES (8, 'Mario', 'Rossi', '1990-10-24', 'ABC123', '2009-09-15', '123ABC', 'mario.rossi@uniline.it');
 
 10. Cambiare il numero dell’ufficio del professor Pietro Rizzo in 126
 
-
+UPDATE 'teachers' 
+SET 'office_number'='126' 
+WHERE name = 'Pietro' 
+&& surname = 'Rizzo';
 
 11. Eliminare dalla tabella studenti il record creato precedentemente al punto 9
 
-
+DELETE 
+FROM `students` 
+WHERE id = 5001;
